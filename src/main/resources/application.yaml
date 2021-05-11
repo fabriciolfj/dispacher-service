@@ -10,7 +10,7 @@ spring:
         packlabel-out-0:
           destination: order-dispatched
   rabbitmq:
-    host: polarmq-broker
+    host: polarmq-broker-rabbitmq
     port: 5672
     username: user
     password: password
