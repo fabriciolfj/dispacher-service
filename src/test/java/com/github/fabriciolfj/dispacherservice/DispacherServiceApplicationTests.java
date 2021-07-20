@@ -20,7 +20,7 @@ class DispacherServiceApplicationTests {
 	@Autowired
 	private FunctionCatalog catalog;
 
-	//@Test
+	@Test
 	void packAndLabelOder() {
 		Function<OrderAcceptedMessage, Flux<OrderDispatchedMessage>> packAndLabel =
 				catalog.lookup(Function.class, "pack|label");
